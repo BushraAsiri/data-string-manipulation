@@ -16,10 +16,8 @@ def belongs_to(a_string, a_word):
     returns True if a_string contains a_word
     example: belongs_to("hey jude", "jude") => True
     """
-    if a_word in a_string:
-       return True
-    else:
-        return False
+    return a_word in a_string
+
 
 def count_repetition(a_string, a_substring):
     """
@@ -55,7 +53,7 @@ def full_description_concatenation(first_name, last_name, age):
      the age using concatenation
     example: full_description_concatenation("john", "doe", 33) => "John Doe is 33"
     """
-    return first_name.capitalize()+" " + last_name.capitalize() + " is " + str(age)
+    return first_name.capitalize() + ' ' + last_name.capitalize() + ' is ' + str(age)
 
 def full_description_formatting(first_name, last_name, age):
     """
